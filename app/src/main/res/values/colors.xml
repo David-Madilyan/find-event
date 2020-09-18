@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#609EE8</color>
+    <color name="colorPrimaryDark">#BFBEBE</color>
+    <color name="colorAccent">#609EE8</color>
+    <color name="backgroundColor">#F2F2F2</color>
+    <color name="bottomMenuBackground">#FFFFFF</color>
+    <color name="blueColor">#609EE8</color>
+    <color name="blueColor1">#88609EE8</color>
+    <color name="blueColor2">#CC609EE8</color>
+    <color name="darkColor">#000000</color>
+    <color name="textColor">#686868</color>
+    <color name="textColor1">#FFFFFF</color>
+    <color name="textColor2">#728B9B</color>
+    <color name="textColor4">#404040</color>
+    <color name="errorStrokeColor">#FFE86060</color>
+    <color name="colorButtonPressed">#1255A4</color>
+    <color name="colorButtonDisabled">#BCC9D8</color>
+    <color name="iconColorChecked">#609EE8</color>
+    <color name="iconColorNormal">#6E8899</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+</resources>

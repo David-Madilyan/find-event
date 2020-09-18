@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_item_feed"
+        android:icon="@drawable/ic_feed"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="feed" />
+
+    <item android:id="@+id/menu_item_create"
+        android:icon="@drawable/ic_add_event"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:title="create"/>
+
+
+    <item android:id="@+id/menu_item_profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:title="profile"/>
+</menu>

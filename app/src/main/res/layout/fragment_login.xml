@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.LoginFragment">
+
+    <ProgressBar
+        android:id="@+id/loginProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminateTint="@color/blueColor"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:hint="@string/mail"
+        style="@style/edit_text_auth_style"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/passEditText"
+            android:hint="@string/password"
+            style="@style/edit_text_auth_style"
+            android:paddingEnd="50dp"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/passShowHideButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="end|center_vertical"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:tag="hide"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_hide_pass" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_auth_selector"
+        android:text="@string/login"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="17sp"
+        android:textColor="@color/textColor1"/>
+
+</LinearLayout>

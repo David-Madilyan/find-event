@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragments.RecoveryPassFragment">
+
+    <ProgressBar
+        android:id="@+id/recoveryProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminateTint="@color/blueColor"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:hint="@string/mail"
+        style="@style/edit_text_auth_style"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/recoveryButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btn_auth_selector"
+        android:text="@string/onward"
+        android:enabled="false"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="17sp"
+        android:textColor="@color/textColor1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/findPass"
+        android:layout_gravity="end"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_semibold"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.SelectCityFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/city_select"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editSelectCity"
+            android:inputType="text"
+            android:hint="@string/city_name"
+            style="@style/edit_text_auth_style"/>
+        <ImageView
+            android:id="@+id/checkImageCity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="end|center_vertical"/>
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/errorSelectCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/errorStrokeColor"
+        android:fontFamily="@font/montserrat_regular"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/selectButtonCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/btn_auth_selector"
+        android:textColor="@color/textColor1"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/select"/>
+</LinearLayout>

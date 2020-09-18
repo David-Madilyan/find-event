@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fragmentRegister"
+    android:orientation="vertical"
+    tools:context=".fragments.RegisterFragment">
+
+
+    <ProgressBar
+        android:id="@+id/registerProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminateTint="@color/blueColor"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:hint="@string/username"
+        style="@style/edit_text_auth_style"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="15dp"
+        android:maxLength="30"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:hint="@string/mail"
+        style="@style/edit_text_auth_style"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="15dp"
+        android:inputType="textEmailAddress"/>
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        style="@style/edit_text_auth_style"
+        app:allowed_chars="1234567890"
+        android:inputType="phone"
+        android:typeface="monospace"
+        app:mask="+7(###)###-##-##"
+        app:keep_hint="true"
+        android:layout_marginTop="10dp"
+        android:paddingEnd="15dp"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/passEditText"
+            android:hint="@string/password"
+            style="@style/edit_text_auth_style"
+            android:paddingEnd="50dp"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/passShowHide"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:tag="show"
+            android:src="@drawable/ic_view_pass" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/confirmPassEditText"
+            android:hint="@string/confirm_pass"
+            style="@style/edit_text_auth_style"
+            android:paddingEnd="50dp"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/confirmHideShowButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:tag="show"
+            android:src="@drawable/ic_view_pass" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:background="@drawable/btn_auth_selector"
+        android:textColor="@color/textColor1"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/register"/>
+
+</LinearLayout>

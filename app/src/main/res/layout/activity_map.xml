@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor1"
+    tools:context=".activities.MapActivity">
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        tools:context=".activities.MapActivity" />
+
+    <TextView
+        android:id="@+id/findAddress"
+        android:textColor="@color/blueColor"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"/>
+
+    <com.madcryk.findevent.customViews.SearchView
+        android:id="@+id/searchViewPlace"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+    <Button
+        android:id="@+id/choiceLocationButton"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:text="@string/choice"
+        android:textColor="@color/textColor1"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/btn_auth_selector"
+        android:layout_marginBottom="20dp"/>
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".activities.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:elevation="3dp"
+        android:background="@drawable/background_action_bar">
+
+        <TextView
+            android:id="@+id/titleChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blueColor"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_gravity="center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesRecyclerView"
+        android:layout_width="match_parent"
+        android:scrollIndicators="none"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="@string/message"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:maxLength="140"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_text_selector"
+            android:layout_weight="0.2"/>
+
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_send"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</FrameLayout>
